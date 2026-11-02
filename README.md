@@ -4,7 +4,7 @@ An AI-powered Personal Voice Assistant built using Python, Flask, Groq AI and Ja
 
 ## 🚀 Live Demo
 
-https://abhinav-ai-assistant.onrender.com?utm_source=chatgpt.com
+https://abhinav-ai-assistant.onrender.com
 
 ## 💻 GitHub Repository
 
