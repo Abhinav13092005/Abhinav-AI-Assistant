@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ABHINAV AI | Personal Assistant</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header class="top-header">
+            <div>
+                <h1>ABHINAV AI</h1>
+                <p>PERSONAL AI VOICE ASSISTANT & LAPTOP AUTOMATION</p>
+            </div>
+
+            <span class="status">● SYSTEM ONLINE</span>
+        </header>
+
+        <main>
+
+            <section class="assistant-circle">
+
+                <div class="orb">
+                    <span>A</span>
+                </div>
+
+                <h2>ABHINAV AI</h2>
+
+                <p id="status">Ready for your command</p>
+
+            </section>
+
+            <section class="controls">
+
+                <button id="listenBtn">
+                    🎤 START LISTENING
+                </button>
+
+                <input
+                    type="text"
+                    id="commandInput"
+                    placeholder="Type an English command..."
+                    autocomplete="off"
+                >
+
+                <button id="sendBtn">
+                    SEND COMMAND
+                </button>
+
+            </section>
+
+            <section class="response">
+
+                <h3>ASSISTANT RESPONSE</h3>
+
+                <p id="responseText">
+                    Hello! I am Abhinav AI. How can I help you?
+                </p>
+
+            </section>
+
+            <section class="history">
+
+                <h3>COMMAND HISTORY</h3>
+
+                <ul id="historyList"></ul>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>ABHINAV AI SYSTEM | POWERED BY PYTHON & GROQ AI</p>
+            <p>PERSONAL AI AUTOMATION SYSTEM</p>
+        </footer>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
